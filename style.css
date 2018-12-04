@@ -1,0 +1,15 @@
+/*drawing app css */
+
+body {
+  background-color: #aaa;
+  text-align: center;
+}
+
+canvas {
+  touch-action: none;
+  background-color: #eee;
+}
+
+button{
+  font-size: 110%;
+}
