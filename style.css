@@ -5,9 +5,35 @@ body {
   text-align: center;
 }
 
+a {
+  text-decoration: none;
+  color: #87a9e6;
+}
+a:hover{color: rebeccapurple;}
+
+header{
+  background-color: #001;
+  color: #ddd;
+  display:flex;
+  justify-content: space-around;
+  align-items: baseline;
+  text-align: left;
+}
+
+footer{
+  background-color: #001;
+  color: #ddd;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+}
+
+.menu{align-self:flex-end;background-color: #aaa;padding:1em 1em 0.37em;border-radius: 0.24em 1em 0}
+
 canvas {
   touch-action: none;
   background-color: #eee;
+  border: #999 1px solid
 }
 
 button{

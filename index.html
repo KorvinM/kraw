@@ -1,13 +1,35 @@
 <!DOCTYPE html>
-<html>
-<head>
+<html lang=“en”>
+  <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Kraw WebApp</title>
+    <link rel="stylesheet" href="sanitize.css">
+    <link rel="stylesheet" href="style.css">
     <script src="main.js"></script>
-</head>
-<body onload="init()">
-    <canvas width="600" height="600">
-        <p>Your browser doesn't support canvas.</p>
+  </head>
+  <body onload="init()">
+    <header>
+      <div class="intro">
+	<h1>Kraw</h1>
+	<p>A basic Draw web application, based on a <a href="https://24ways.org/2018/the-art-of-mathematics/">tutorial by Hagar Shilo</a>.</p>
+      </div>
+      <div class="menu">
+        <input type="color" class="color" />
+	<label for="line-width"></label>
+
+	<select id="line-width">
+	  <option value="1">Fine</option>
+	  <option value="3.7">Medium</option>
+	  <option value="6.2">Thick</option>
+	</select>
+        <button type="button" class="clear">Clear</button>
+      </div>
+    </header>
+    <canvas width="800" height="500">
+      <p>Your browser doesn't support canvas.</p>
     </canvas>
-</body>
+    <footer>
+      <p>A project by <a href="http:korvin.org">Korvin M Media</a>
+    </footer>
+  </body>
 </html>

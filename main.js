@@ -12,6 +12,20 @@ function init(){
   canvas.onpointerdown = handlePointerDown;
   canvas.onpointerup = stopDrawing;//*
   canvas.onpointerout = stopDrawing;//*these two lines could be combined?
+  document.querySelector(".clear").onclick = clearCanvas;
+}
+
+function getColor() {
+    return document.querySelector(".color").value;
+}
+function getLineWidth() {
+    return document.querySelector("#line-width").value;
+}
+
+function clearCanvas() {
+    if (confirm("Are you sure you want to clear the canvas?")) {
+        context.clearRect(0, 0, w, h);
+    }
 }
 
 function drawLine() {
@@ -20,7 +34,8 @@ function drawLine() {
         c = currX,
         d = currY;
 
-    context.lineWidth = 2;
+    context.strokeStyle = getColor();
+    context.lineWidth = getLineWidth();
     context.lineCap = "round";
 
     context.beginPath();
@@ -52,7 +67,3 @@ function handlePointerDown(e) {
     recordPointerLocation(e);
     draw = true;
 }
-
-
-
-
