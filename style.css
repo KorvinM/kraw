@@ -11,7 +11,7 @@ a {
 }
 a:hover{color: rebeccapurple;}
 
-header{
+header, footer{
   background-color: #001;
   color: #ddd;
   display:flex;
