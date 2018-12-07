@@ -7,17 +7,19 @@ body {
 
 a {
   text-decoration: none;
-  color: #87a9e6;
+  color: #87a9e6;transition: all 0.25s;
 }
-a:hover{color: rebeccapurple;}
+a:hover{color: #a9b9f6;}
+a:visited{color: #a99fd0;}
 
 header, footer{
   background-color: #001;
   color: #ddd;
   display:flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: baseline;
   text-align: left;
+  padding: 0 5em;
 }
 
 footer{
@@ -28,7 +30,15 @@ footer{
   width: 100%;
 }
 
-.menu{align-self:flex-end;background-color: #aaa;padding:1em 1em 0.37em;border-radius: 0.24em 1em 0}
+.menu{
+  align-self:flex-end;
+  background-color: #aaa;
+  padding:1em 1em 0.62em;
+  border-radius: 0.24em 1em 0;
+  font-size: 110%;
+
+}
+.menu-item{padding:0 0.62em;}
 
 canvas {
   touch-action: none;
@@ -37,5 +47,13 @@ canvas {
 }
 
 button{
-  font-size: 110%;
+}
+
+/*mq for smaller screens */
+
+@media (max-width: 38em){
+header, footer {padding: 0 1.4em; }
+.menu{align-self:stretch; padding: 0.4em;}
+.menu-item{padding: 0; display:inline-flex;margin-bottom:1em;}
+
 }

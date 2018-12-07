@@ -2,6 +2,7 @@
 <html lang=“en”>
   <head>
     <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Kraw WebApp</title>
     <link rel="stylesheet" href="sanitize.css">
     <link rel="stylesheet" href="style.css">
@@ -14,7 +15,10 @@
 	<p>A basic Draw web application, based on a <a href="https://24ways.org/2018/the-art-of-mathematics/">tutorial by Hagar Shilo</a>.</p>
       </div>
       <div class="menu">
+	<span class="menu-item">
         <input type="color" class="color" />
+	</span>
+	<span class="menu-item">
 	<label for="line-width"></label>
 
 	<select id="line-width">
@@ -22,7 +26,10 @@
 	  <option value="3.7">Medium</option>
 	  <option value="6.2">Thick</option>
 	</select>
+	</span>
+	<span class="menu-item">
         <button type="button" class="clear">Clear</button>
+	</span>
       </div>
     </header>
     <canvas width="800" height="500">
