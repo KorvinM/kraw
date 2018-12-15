@@ -12,7 +12,7 @@
     <header>
       <div class="intro">
 	<h1>Kraw</h1>
-	<p>A basic Draw web application, based on a <a href="https://24ways.org/2018/the-art-of-mathematics/">tutorial by Hagar Shilo</a>.</p>
+	<p>A Draw web application, with modes, based on a <a href="https://24ways.org/2018/the-art-of-mathematics/">tutorial by Hagar Shilo</a>.</p>
       </div>
       <div class="menu">
 	<span class="menu-item">
@@ -28,7 +28,14 @@
 	</select>
 	</span>
 	<span class="menu-item">
-        <button type="button" class="clear">Clear</button>
+	  <select id="mode">
+	    <option value="normal">Normal</option>
+	    <option value="mirror">Mirror</option>
+	    <option value="mandala">Mandala</option>
+	  </select>
+	</span>
+	<span class="menu-item">
+          <button type="button" class="clear">Clear</button>
 	</span>
       </div>
     </header>
