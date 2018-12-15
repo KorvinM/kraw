@@ -23,8 +23,6 @@ header, footer{
 }
 
 footer{
-  background-color: #001;
-  color: #ddd;
   position: absolute;
   bottom: 0px;
   width: 100%;
